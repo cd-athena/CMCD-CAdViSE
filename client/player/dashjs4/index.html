@@ -12,6 +12,10 @@
 <div>
     <video style="width: 1280px;height: 720px;" id="video"></video>
 </div>
+<!-- Minh - Enable CMCD - S -->
+<div id='trace' style="height:640px;width:480px;border:1px solid #ccc;font:16px/26px Georgia, Garamond;overflow:auto;"></div>
+<!-- Minh - Enable CMCD - E -->
+
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     const keyValues = window.location.search.substr(1).split('&')
@@ -37,6 +41,14 @@
     const video = document.getElementById('video')
     const player = dashjs.MediaPlayer().create()
 
+/* Minh - Enable CMCD - S */
+    var CMCD_DATA_GENERATED = dashjs.MetricsReporting.events.CMCD_DATA_GENERATED;
+
+    var CMCD_MODE_QUERY = 'query';  /* as query parameters */
+    var CMCD_MODE_HEADER = 'header'; /* as HTTP headers */
+/* Minh - Enable CMCD - E */    
+
+
     // const events = ["loadstart",  "suspend", "abort", "error", "emptied", "stalled", "loadedmetadata", "loadeddata", "canplay", "canplaythrough", "playing", "waiting", "seeking", "seeked", "ended", "durationchange", "play", "pause", "ratechange", "resize", "volumechange", "timeupdate", "progress"];
     const events = ['loadstart', 'suspend', 'abort', 'error', 'emptied', 'stalled', 'loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough', 'playing', 'waiting', 'seeking', 'seeked', 'ended', 'durationchange', 'play', 'pause', 'ratechange']
 
@@ -50,6 +62,77 @@
 
     player.initialize(video, mpdURL, false)
     player.play()
+
+/* Minh - Enable CMCD - S */
+    player.on(CMCD_DATA_GENERATED, handleCmcdDataGeneratedEvent);
+
+    player.updateSettings({
+        streaming: {
+            cmcd: {
+                enabled: true, 
+                sid: 'b248658d-1d1a-4039-91d0-8c08ba597da5', 
+                cid: '21cf726cfe3d937b5f974f72bb5bd06a',
+                mode: CMCD_MODE_HEADER,
+            }
+        }
+    });
+    function handleCmcdDataGeneratedEvent(event) {
+        log('type: ' + event.mediaType);
+        log('file: ' + event.url.split('/').pop());
+        var mode = player.getSettings().streaming.cmcd.mode;
+        var data = mode === CMCD_MODE_HEADER ? getKeysForHeaderMode(event) : getKeysForQueryMode(event);
+        var keys = Object.keys(data);
+        keys = keys.sort();
+        for (var key of keys) {
+            log(key.padEnd(4) + ': ' + event.cmcdData[key]);
+        }
+        log('');
+    }
+
+    function getKeysForQueryMode(event) {
+        var cmcdData = {};
+        var cmcdString = event.cmcdString;
+
+        extractKeyValuePairs(cmcdString, cmcdData);
+
+        return cmcdData;
+    }
+
+    function getKeysForHeaderMode(event) {
+        var cmcdData = {};
+        var keys = Object.keys(event.headers);
+
+        for (var key of keys) {
+            extractKeyValuePairs(event.headers[key], cmcdData)
+        }
+        
+        return cmcdData
+    }
+
+    function extractKeyValuePairs(cmcdString, cmcdData) {
+        if (cmcdString === '') {
+            return;
+        }
+        var keyValuePairs = cmcdString.split(',');
+
+        keyValuePairs.forEach(function (keyValuePair) {
+            var data = keyValuePair.split('=');
+            var key = data[0];
+            var value = data[1];
+
+            cmcdData[key] = value;
+        })
+
+    }
+
+    function log(msg) {
+        msg = msg.length > 200 ? msg.substring(0, 200) + '...' : msg; /* to avoid repeated wrapping with large objects */
+        var tracePanel = document.getElementById('trace');
+        tracePanel.innerHTML += msg + '\n' + '<br />';
+        tracePanel.scrollTop = tracePanel.scrollHeight;
+        console.log(msg);
+    }    
+/* Minh - Enable CMCD - E */    
   })
 </script>
 </body>
