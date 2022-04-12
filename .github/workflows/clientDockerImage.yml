@@ -1,8 +1,9 @@
-name: Docker Image CI
+name: Docker Client Image CI
 
 on:
   push:
-    branches: [ master ]
+    paths:
+      - client/**
 
 jobs:
   build:
