@@ -2,7 +2,8 @@ name: Docker Client Image CI
 
 on:
   push:
-    branches: ['*']
+    branches:
+      - '*'
     paths:
       - client/**
 
