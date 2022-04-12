@@ -3,14 +3,17 @@ name: Docker Image CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Docker hub login
+      env:
+        DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
+        DOCKER_PASS: ${{secrets.DOCKER_HUB_PASS}}
+      run: docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build client docker image
       run: docker build -t babakt/ppt-client:cmcd ./client/
     - name: Push the image to docker hub
