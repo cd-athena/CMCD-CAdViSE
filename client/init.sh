@@ -9,7 +9,7 @@ config=$(cat /home/ec2-user/config.json)
 player=$(echo "$config" | jq -r '.player')
 
 sudo docker pull babakt/ppt-client:cmcd &>/dev/null
-sudo docker run --rm -d --name "ppt-client-$player" -p 5900:5900 -v /dev/shm:/dev/shm babakt/ppt-client
+sudo docker run --rm -d --name "ppt-client-$player" -p 5900:5900 -v /dev/shm:/dev/shm babakt/ppt-client:cmcd
 
 sudo docker cp /home/ec2-user/config.json "ppt-client-$player:/home/seluser/ppt/config.json"
 sudo docker exec -d "ppt-client-$player" sudo pm2 start index.js
