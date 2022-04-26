@@ -1,0 +1,28 @@
+<html>
+ <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./kMeansClustering.js"></script>  
+ </head>
+ <body>
+    <button type="button" onclick="runPyScript()"> Run python </button>
+    <!----------------------------------->
+    <script type="text/javascript">
+
+        function runPyScript(){
+            let data = [[1],
+                [2],
+                [3],
+                [10],
+                [12],
+                [20], [22], [24], [25]];
+
+            let result = kmeans(data, 3);
+
+            for (let i = 0; i < result.centroids.length; i ++) {
+                console.log(" centroid idx " + i + ": " + result.centroids[i]);
+            }
+
+        }
+
+</script>
