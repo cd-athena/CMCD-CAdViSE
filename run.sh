@@ -25,7 +25,7 @@ bitmovinAPIKey=""
 analyticsOutputId=""
 startTime=""
 endTime=""
-instancesType="m5ad.large"
+instancesType="m5ad.xlarge"
 title="bbb1"
 clientWarmupTime=1 #s
 ########################### /configurations ##########################
@@ -327,32 +327,5 @@ while [ $currentExperiment -lt $experiments ]; do
     showError "Failed to run experiment(s). Check the S3 bucket for details"
   fi
 done
-
-#ppt-analytics-ext-id
-endTime=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
-
-showMessage "Requesting the analytics data"
-requestResult=$(curl -s -X POST https://api.bitmovin.com/v1/analytics/exports/ \
-  -H 'Content-Type: application/json' \
-  -H 'X-Api-Key: '$bitmovinAPIKey \
-  -d '{
-        "startTime": "'$startTime'",
-        "endTime": "'$endTime'",
-        "name": "ppt-analytics-request-'$id'",
-        "licenseKey": "'$analyticsLicenseKey'",
-        "output": {
-          "outputPath": "analytics/'$id'/",
-          "outputId": "'$analyticsOutputId'"
-        }
-      }')
-requestStatus=$(echo "$requestResult" | jq -r '.status')
-taskId=$(echo "$requestResult" | jq -r '.data.result.id')
-taskStatus=$(echo "$requestResult" | jq -r '.data.result.status')
-if [ $taskStatus == 'ERROR' ] || [ $requestStatus == 'ERROR' ]; then
-  showError 'Failed to request the analytics data'
-  echo $requestResult
-else
-  echo $taskId
-fi
 
 cleanExit 0
