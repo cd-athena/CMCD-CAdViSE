@@ -11,13 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build client docker image
-        run: docker build -t babakt/ppt-client:cadvise ./client/
+        run: docker build -t babakt/ppt-client:cmcd ./client/
       - name: Docker hub login
         env:
           DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
           DOCKER_PASS: ${{secrets.DOCKER_HUB_PASS}}
         run: echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
       - name: Push the image to docker hub
-        run: docker push babakt/ppt-client:cadvise
+        run: docker push babakt/ppt-client:cmcd
       - name: Docker hub logout
         run: docker logout
