@@ -47884,19 +47884,6 @@ if (undefined === atob) {
                             _initialMediaRequestsDone[request.mediaType] = true;
                         }
 
-                        var dt= _getDeviceType();
-                        var sw= _getScreenWidth();
-
-                        if (dt == 'd' || dt == 'm' || dt == 't') {
-                            data.dt = `${dt}`;
-                            console.log("=====> sending to the server: dt: " + data.dt);
-                        }
-
-                        if (!isNaN(sw)) {
-                            data.sw = sw;
-                            console.log("=====> sending to the server: sw: " + data.sw);
-                        }                        
-
                         return data;
                     }
 
