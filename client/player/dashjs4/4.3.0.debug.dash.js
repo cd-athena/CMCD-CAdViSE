@@ -47699,7 +47699,7 @@ if (undefined === atob) {
                             if (settings.get().streaming.cmcd && settings.get().streaming.cmcd.enabled) {
                                 var cmcdData = _getCmcdData(request);
 
-                                var cmcdObjectHeader = _copyParameters(cmcdData, ['br', 'd', 'ot', 'tb']);
+                                var cmcdObjectHeader = _copyParameters(cmcdData, ['br', 'd', 'ot', 'tb', 'dt', 'sw']);
 
                                 var cmcdRequestHeader = _copyParameters(cmcdData, ['bl', 'dl', 'mtp', 'nor', 'nrr', 'su']);
 
@@ -47771,6 +47771,7 @@ if (undefined === atob) {
 
                         if (!isNaN(tb)) {
                             data.tb = tb;
+                            console.log("=====> sending to the server: tb: " + data.tb);
                         }
                         /* Minh - get top bitrate - add - E */
 
@@ -47781,10 +47782,12 @@ if (undefined === atob) {
 
                         if (dt == 'd' || dt == 'm' || dt == 't') {
                             data.dt = `${dt}`;
+                            console.log("=====> sending to the server: dt: " + data.dt);
                         }
 
                         if (!isNaN(sw)) {
                             data.sw = sw;
+                            console.log("=====> sending to the server: sw: " + data.sw);
                         }
                         
                         /* Minh - get device info - add - E */                     
@@ -47880,6 +47883,19 @@ if (undefined === atob) {
                             _isStartup[request.mediaType] = false;
                             _initialMediaRequestsDone[request.mediaType] = true;
                         }
+
+                        var dt= _getDeviceType();
+                        var sw= _getScreenWidth();
+
+                        if (dt == 'd' || dt == 'm' || dt == 't') {
+                            data.dt = `${dt}`;
+                            console.log("=====> sending to the server: dt: " + data.dt);
+                        }
+
+                        if (!isNaN(sw)) {
+                            data.sw = sw;
+                            console.log("=====> sending to the server: sw: " + data.sw);
+                        }                        
 
                         return data;
                     }
@@ -48007,8 +48023,16 @@ if (undefined === atob) {
                             }
                             /* Minh - get top bitrate - mod - E */
                         } catch (e) {
-                            return null;
+                            return 1000000;
                         }
+                    }
+
+                    function _getDeviceType(){
+                        return DEVICE_TYPES.DESKTOP;
+                    }
+
+                    function _getScreenWidth(){
+                        return 1080;
                     }
 
                     function _getObjectDurationByRequest(request) {
