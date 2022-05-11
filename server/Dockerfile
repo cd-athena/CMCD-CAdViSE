@@ -8,8 +8,8 @@ COPY package-lock.json /home/ppt
 RUN mkdir -p /home/ppt/dataset
 RUN wget --no-parent --recursive ftp://ftp.itec.aau.at/datasets/mmsys22/Seconds_That_Count/4sec/avc/
 RUN mv ftp.itec.aau.at/datasets/mmsys22/Seconds_That_Count/4sec/avc/ /home/ppt/dataset/stc/
-RUN mkdir -p /home/ppt/manifests
-COPY manifests/stc /home/ppt/manifests
+RUN mkdir -p /home/ppt/manifests/stc
+COPY manifests/stc /home/ppt/manifests/stc
 RUN npm i && npm i -g pm2
 EXPOSE 80
 
