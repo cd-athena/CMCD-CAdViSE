@@ -48023,7 +48023,7 @@ if (undefined === atob) {
                             }
                             /* Minh - get top bitrate - mod - E */
                         } catch (e) {
-                            return null;
+                            return 1000000;
                         }
                     }
 

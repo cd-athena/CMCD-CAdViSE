@@ -35,7 +35,8 @@ app.get('/dataset/:title/:fileName', async (request, response) => {
 
   axios({
     method: 'get',
-    url: BASEURL + title + '/' + fileName
+    url: BASEURL + title + '/' + fileName,
+    headers: request.headers
   }).then((serverResponse) => {
     const manifest = serverResponse.data.replace(/queryString/g, 'playerABR=' + playerABR)
     response.send(manifest)
@@ -56,7 +57,8 @@ app.get('/dataset/:title/:filePath/:fileName', async (request, response) => {
   axios({
     method: 'get',
     url: BASEURL + title + '/' + filePath + '/' + fileName,
-    responseType: 'stream'
+    responseType: 'stream',
+    headers: request.headers
   }).then((serverResponse) => {
     serverResponse.data.pipe(response)
   }).catch(console.error)

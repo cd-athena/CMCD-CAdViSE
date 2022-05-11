@@ -1,0 +1,41 @@
+/*** VoD streaming ***/
+/*
+	As all segments are ready, the server only needs to prepare a mpd file
+	which consists of bitrate smaller than or equal to the tb value from
+	a specific client.
+*/
+
+
+Input: device type (dt), screen width (sw), top bitrate (tb), available bitrates (available_bitrates) and their resolutions (resolution_width)
+Output: max_bitrate_in_mpd
+
+switch (dt) {
+	case 't':	// tv
+		max_width_for_device = 3840; // 4k
+		break;
+	case 'd':	// desktop
+		max_width_for_device = 1920; // 1080p
+		brake;
+	case 'm':	// mobile
+		max_width_for_device = 1024; // 720p
+		break;
+	default:
+		max_width_for_device = 3840;
+		break;
+}
+
+max_bitrate_in_mpd = available_bitrates[0];
+
+for (i = available_bitrates.length-1; i >=0; i--) {
+    bitrate = available_bitrates[i];
+    width = resolution_width[i];
+
+    if (bitrate <= max_width_for_device && width <= max_width_for_device) {
+        max_bitrate_in_mpd = bitrate;
+        break;
+    }
+}
+
+return max_bitrate_in_mpd;
+
+
