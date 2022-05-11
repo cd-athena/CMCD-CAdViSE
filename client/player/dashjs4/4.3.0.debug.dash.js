@@ -47781,7 +47781,7 @@ if (undefined === atob) {
                         var sw= _getScreenWidth();
 
                         if (dt == 'd' || dt == 'm' || dt == 't') {
-                            data.dt = `${dt}`;
+                            data.dt = dt;
                             console.log("=====> sending to the server: dt: " + data.dt);
                         }
 
@@ -47888,7 +47888,7 @@ if (undefined === atob) {
                         var sw= _getScreenWidth();
 
                         if (dt == 'd' || dt == 'm' || dt == 't') {
-                            data.dt = `${dt}`;
+                            data.dt = dt;
                             console.log("=====> sending to the server: dt: " + data.dt);
                         }
 

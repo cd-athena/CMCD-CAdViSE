@@ -17,9 +17,11 @@ app.get('/:title/:fileName', (request, response) => {
   const { title, fileName } = request.params
 
   const CMCDParams = {}
-  request.headers['cmcd-object'].split(',').forEach(CMCDParam => {
-    CMCDParams[CMCDParam.split('=')[0]] = CMCDParam.split('=')[1]
-  })
+  if (request.headers['cmcd-object']) {
+    request.headers['cmcd-object'].split(',').forEach(CMCDParam => {
+      CMCDParams[CMCDParam.split('=')[0]] = CMCDParam.split('=')[1]
+    })
+  }
 
   if (CMCDParams.dt) {
     console.log('Serving', title, 'manifest_' + getMaxBitrateInMPD(CMCDParams.dt) + '.mpd')
