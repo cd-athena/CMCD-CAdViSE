@@ -4,7 +4,7 @@
     "serverIngress": 0,
     "serverEgress": 0,
     "serverLatency": 0,
-    "clientIngress": 0,
+    "clientIngress": 4000,
     "clientEgress": 0,
     "clientLatency": 0
   }
