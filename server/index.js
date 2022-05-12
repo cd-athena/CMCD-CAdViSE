@@ -23,9 +23,9 @@ app.get('/:title/:fileName', (request, response) => {
     })
   }
 
-  if (CMCDParams.dt && CMCDParam.sw) {
-    console.log('Serving', title, 'manifest_' + getMaxBitrateInMPD(CMCDParams.dt, CMCDParam.sw, CMCDParam.tb) + '.mpd')
-    fs.createReadStream('manifests/stc/manifest_' + getMaxBitrateInMPD(CMCDParams.dt, CMCDParam.sw, CMCDParam.tb) + '.mpd').pipe(response)
+  if (CMCDParams.dt && CMCDParams.sw && CMCDParams.tb) {
+    console.log('Serving', title, 'manifest_' + getMaxBitrateInMPD(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb) + '.mpd')
+    fs.createReadStream('manifests/stc/manifest_' + getMaxBitrateInMPD(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb) + '.mpd').pipe(response)
   } else {
     console.log('Serving', title, fileName)
     fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
@@ -97,7 +97,7 @@ const getMaxBitrateInMPD = (deviceType, screenWidth, topBitrate) => {
     let bitrate = availableBitrates[i]
     let width = resolutionWidth[i]
 
-    if (bitrate <= topBitrate && width <= maxWidthForDevice) {
+    if (bitrate <= (topBitrate * 1000) && width <= maxWidthForDevice) {
       maxBitrateInMPD = bitrate
       break
     }
