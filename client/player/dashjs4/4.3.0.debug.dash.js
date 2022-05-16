@@ -47967,14 +47967,16 @@ if (undefined === atob) {
 
                     function _getTopBitrateByType(mediaType) {
                         try {
-                            var info = abrController.getTopBitrateInfoFor(mediaType);
-
+                            // var info = abrController.getTopBitrateInfoFor(mediaType);
+                            var defaultTopBitrate = 1000000;
                             /* Minh - get top bitrate - mod - S */
-                            console.log("\t\t### _getTopBitrateByType() is triggered");
-                            var defaultTopBitrate = Math.round(info.bitrate / 1000);    // calculated from dashjs
+                            console.log("\t\t### _getTopBitrateByType() is triggered. MediaType: " + mediaType);
+                            // if (info) {
+                            //     defaultTopBitrate = Math.round(info.bitrate / 1000);    // calculated from dashjs
+                            // }
 
 
-                            if (mediaType === 'video') {
+                            if (mediaType != 'audio') {
                                 var AbrControlerThroughputHistory = abrController.getThroughputHistory();
                                 var last_video_throughput = Math.round(AbrControlerThroughputHistory.getSafeAverageThroughput(mediaType, true));
                                 console.log("\t\t\t -- last throughput [kbps]: " + last_video_throughput);

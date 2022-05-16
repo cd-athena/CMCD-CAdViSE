@@ -28,7 +28,8 @@ app.get('/:title/:fileName', (request, response) => {
     fs.createReadStream('manifests/stc/manifest_' + getMaxBitrateInMPD(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb) + '.mpd').pipe(response)
   } else {
     console.log('Serving', title, fileName)
-    fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
+    // fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
+    fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
   }
 })
 
