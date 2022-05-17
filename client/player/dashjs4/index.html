@@ -78,9 +78,12 @@
         const data = mode === CMCD_MODE_HEADER ? getKeysForHeaderMode(event) : getKeysForQueryMode(event);
         let keys = Object.keys(data);
         keys = keys.sort();
+        /*
         for (const key of keys) {
             log(key.padEnd(4) + ': ' + event.cmcdData[key]);
         }
+        */
+        log('tb'.padEnd(4) + ': ' + event.cmcdData['tb']);
         log('');
     }
 

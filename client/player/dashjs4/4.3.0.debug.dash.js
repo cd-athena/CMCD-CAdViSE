@@ -47565,9 +47565,13 @@ if (undefined === atob) {
                 const DEVICE_TYPES = {
                     MOBILE: 'm',
                     DESKTOP: 'd',
-                    TV: 't',
-                    ALL: 'a'
+                    TV: 't'
                 };
+                const SCREENWIDTH = {
+                    MOBILE: 1024,
+                    DESKTOP: 1920,
+                    TV: 3840
+                }
                 // Minh - get device info - add - E                
                 var RTP_SAFETY_FACTOR = 5;
 
@@ -48033,7 +48037,7 @@ if (undefined === atob) {
                     }
 
                     function _getScreenWidth(){
-                        return 1080;
+                        return SCREENWIDTH.DESKTOP;
                     }
 
                     function _getObjectDurationByRequest(request) {
