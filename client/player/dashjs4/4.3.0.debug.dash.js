@@ -48033,11 +48033,11 @@ if (undefined === atob) {
                     }
 
                     function _getDeviceType(){
-                        return DEVICE_TYPES.TV;
+                        return DEVICE_TYPES.MOBILE;
                     }
 
                     function _getScreenWidth(){
-                        return SCREENWIDTH.TV;
+                        return SCREENWIDTH.MOBILE;
                     }
 
                     function _getObjectDurationByRequest(request) {
