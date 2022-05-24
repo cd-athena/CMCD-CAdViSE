@@ -1,0 +1,3296 @@
+[
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 27646,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 29671,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 29671,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13946,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15087,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14807,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12056,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14203,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13946,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14080,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14091,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14897,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10736,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8880,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19147,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21339,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23587,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20612,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23262,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18710,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18319,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16295,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20813,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14226,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12682,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11910,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9361,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11150,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9405,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10669,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11609,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12179,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12380,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9293,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8041,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8723,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9428,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9305,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8734,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14171,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10658,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3625,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7303,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 6420,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 6039,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 794,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2337,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1297,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 626,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1107,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2102,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 44,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1767,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2236,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2919,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2650,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3489,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2807,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3075,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1409,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1867,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1644,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1778,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23856,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20511,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 31482,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28575,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 25354,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 22413,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24135,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21998,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19963,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24470,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28720,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28340,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 32366,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 22312,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14595,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18956,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20768,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24392,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16060,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23642,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20902,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16798,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16104,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17558,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19102,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20824,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19840,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21730,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21227,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19180,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 29414,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 48874,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 43170,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 43953,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 31438,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 33641,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 29234,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20701,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23676,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 26137,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20589,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24739,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 27009,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23531,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18285,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19616,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14964,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12280,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10792,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11978,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12324,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11944,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7034,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2818,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3567,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4328,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3892,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3086,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2169,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2706,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2840,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3645,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3813,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4462,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4674,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4932,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5726,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2974,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3836,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3332,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3388,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2505,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 715,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1476,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 984,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1140,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2863,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2438,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2426,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3645,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3534,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3042,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3120,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3545,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5167,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 6509,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8735,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9260,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9651,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12679,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 27923,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20779,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19996,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10322,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14058,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17581,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17391,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23307,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19023,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18587,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12682,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9271,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9047,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8287,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10960,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 10524,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8891,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9081,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5457,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5871,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2818,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2203,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 201,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7851,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4731,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 592,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2057,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 0,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 0,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4440,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4104,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2773,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4451,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1118,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4495,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7761,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4462,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4003,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4283,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7739,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2974,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2046,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7716,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13689,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 6922,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4596,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14986,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7863,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 6307,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3053,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3433,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3019,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3019,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3645,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5345,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3411,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3735,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3310,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 89,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 0,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 782,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1755,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 78,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 279,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2102,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1699,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2796,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2784,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3444,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4015,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3992,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 4026,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5267,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16552,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15501,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14214,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13778,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13096,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15299,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17514,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20030,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28563,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28138,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21249,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14818,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13745,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14673,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15389,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12145,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14404,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15433,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 12749,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14606,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14841,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15143,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15355,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16686,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17402,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20366,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18733,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20053,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21048,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 22502,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24526,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18196,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7772,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 27311,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 29369,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 22960,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13924,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19437,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18990,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9159,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15433,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15154,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20668,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 28183,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 36359,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 39331,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16585,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23106,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21003,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 21696,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23441,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20064,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 23855,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17916,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16932,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17335,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14460,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 15601,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16507,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18241,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17726,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18554,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19627,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 17346,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 19695,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20254,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 20120,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11944,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 18129,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9428,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16619,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 25723,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 24571,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16921,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14787,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 16753,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11620,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 14483,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 13689,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 8611,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1017,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 0,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 291,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1532,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 760,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1342,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 447,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 928,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1568,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1790,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2346,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2339,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3284,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5251,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 7247,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3892,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5826,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11228,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 9428,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1185,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 548,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1129,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1856,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1979,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1800,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3220,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2247,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1185,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1274,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 324,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 324,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 615,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 503,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 324,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 480,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1672,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2303,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1722,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2035,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1185,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2438,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1834,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 615,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1364,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 5111,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1946,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 3959,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 2628,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1006,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 615,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 357,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 380,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 458,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 1062,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 928,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 782,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 357,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 503,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 44,
+        "clientEgress": 0,
+        "clientLatency": 0
+    },
+    {
+        "duration": 1,
+        "serverIngress": 0,
+        "serverEgress": 0,
+        "serverLatency": 80,
+        "clientIngress": 11,
+        "clientEgress": 0,
+        "clientLatency": 0
+    }
+]
