@@ -47565,9 +47565,13 @@ if (undefined === atob) {
                 const DEVICE_TYPES = {
                     MOBILE: 'm',
                     DESKTOP: 'd',
-                    TV: 't',
-                    ALL: 'a'
+                    TV: 't'
                 };
+                const SCREENWIDTH = {
+                    MOBILE: 1024,
+                    DESKTOP: 1920,
+                    TV: 3840
+                }
                 // Minh - get device info - add - E                
                 var RTP_SAFETY_FACTOR = 5;
 
@@ -47579,7 +47583,7 @@ if (undefined === atob) {
                     var settings = Object(_core_Settings__WEBPACK_IMPORTED_MODULE_4__["default"])(context).getInstance();
 
                     // Minh - add variables - S
-                    var throughputHistory = [];
+                    var throughputHistoryArray = [];
                     var smoothThroughput = 0;
                     var finalTopBitrate = 0;
                     var clientID = 1;
@@ -47967,30 +47971,31 @@ if (undefined === atob) {
 
                     function _getTopBitrateByType(mediaType) {
                         try {
-                            var info = abrController.getTopBitrateInfoFor(mediaType);
-
+                            // var info = abrController.getTopBitrateInfoFor(mediaType);
+                            var defaultTopBitrate = 1000000;
                             /* Minh - get top bitrate - mod - S */
-                            console.log("\t\t### _getTopBitrateByType() is triggered");
-                            var defaultTopBitrate = Math.round(info.bitrate / 1000);    // calculated from dashjs
+                            console.log("\t\t### _getTopBitrateByType() is triggered. MediaType: " + mediaType);
 
-
-                            if (mediaType === 'video') {
+                            if (mediaType != 'audio') {
                                 var AbrControlerThroughputHistory = abrController.getThroughputHistory();
                                 var last_video_throughput = Math.round(AbrControlerThroughputHistory.getSafeAverageThroughput(mediaType, true));
                                 console.log("\t\t\t -- last throughput [kbps]: " + last_video_throughput);
 
                                 if (!isNaN(last_video_throughput)) {
-                                    throughputHistory.push(last_video_throughput);
+                                    throughputHistoryArray.push(last_video_throughput);
+                                }
                                     
+                                var full_history_length = throughputHistoryArray.length;
+                                if (full_history_length > 0) {
                                     var recordPeriod = 5; // Minh: finetune
-                                    var full_history_length = throughputHistory.length;
+                                    
                                     var record_length = Math.min(full_history_length, recordPeriod);
                                     var averageThroughputKbps = 0;
 
                                     for (let i = 0; i < record_length; i ++) {
                                         var idx = full_history_length - record_length + i;
-                                        console.log("\t\t\t### throughput [" + idx + "] [kbps]= " + throughputHistory[idx]);
-                                        averageThroughputKbps += throughputHistory[idx];
+                                        console.log("\t\t\t### throughput [" + idx + "] [kbps]= " + throughputHistoryArray[idx]);
+                                        averageThroughputKbps += throughputHistoryArray[idx];
                                     }
                                     averageThroughputKbps = parseInt(averageThroughputKbps/(100*record_length))*100; // round to the nearest 100kbps
                                     
@@ -48009,7 +48014,7 @@ if (undefined === atob) {
                                     // var estimatedThroughput = (last_video_throughput > smoothThroughput*stableThroughputThreshold) ? smoothThroughput : last_video_throughput;
                                     // estimatedThroughput = parseInt(estimatedThroughput/(100))*100; // round to the nearest 100kbps
 
-                                    finalTopBitrate = Math.min(smoothThroughput, averageThroughputKbps)
+                                    finalTopBitrate = averageThroughputKbps; //Math.min(smoothThroughput, averageThroughputKbps)
                                     console.log("\t\t\t\t### Final topBitrate: " + finalTopBitrate);
                                     return finalTopBitrate;
                                 }
@@ -48023,16 +48028,16 @@ if (undefined === atob) {
                             }
                             /* Minh - get top bitrate - mod - E */
                         } catch (e) {
-                            return 1000000;
+                            return null;
                         }
                     }
 
                     function _getDeviceType(){
-                        return DEVICE_TYPES.DESKTOP;
+                        return DEVICE_TYPES.TV;
                     }
 
                     function _getScreenWidth(){
-                        return 1080;
+                        return SCREENWIDTH.TV;
                     }
 
                     function _getObjectDurationByRequest(request) {
