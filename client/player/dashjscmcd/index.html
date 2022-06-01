@@ -62,7 +62,6 @@
 
     player.updateSettings({
         streaming: {
-            ABRStrategy: 'abrThroughput',
             cmcd: {
                 enabled: true, 
                 sid: 'b248658d-1d1a-4039-91d0-8c08ba597da5', 
@@ -71,7 +70,7 @@
             }
         }
     });
- 
+
     function handleCmcdDataGeneratedEvent(event) {
         log('type: ' + event.mediaType);
         log('file: ' + event.url.split('/').pop());
