@@ -106,8 +106,13 @@ for argument in "$@"; do
           if [[ $value == *"--"* ]]; then
             break
           fi
-          if [[ " ${players[@]} " =~ " ${value} " ]]; then
-            newPlayers+=($value)
+          playerQuantity="$( cut -d 'x' -f 1 <<< "$value" )";
+          playerName="$( cut -d 'x' -f 2- <<< "$value" )";
+          if [[ " ${players[@]} " =~ " ${playerName} " ]]; then
+            until [  $playerQuantity -lt 1 ]; do
+               newPlayers+=($playerName)
+               let playerQuantity-=1
+            done
           else
             showError "Invalid player '$value'"
           fi
