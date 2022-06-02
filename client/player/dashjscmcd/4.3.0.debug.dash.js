@@ -35516,7 +35516,7 @@ if (undefined === atob) {
                             var realAdaptation = representationController.getData();
                             var maxQuality = abrController.getMaxAllowedIndexFor(type, streamInfo.id);
                             var minIdx = abrController.getMinAllowedIndexFor(type, streamInfo.id);
-                            console.log('\t--- DEBUG - minQuality: ' + minIdx);
+                            console.log('\t--- DEBUG - maxQuality: ' + maxQuality);
                             var quality, averageThroughput;
                             var bitrate = null;
 
