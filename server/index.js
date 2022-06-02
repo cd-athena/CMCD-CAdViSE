@@ -29,7 +29,7 @@ app.get('/:title/:fileName', (request, response) => {
   } else {
     console.log('Serving', title, fileName)
     // fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
-    fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
+    fs.createReadStream('manifests/stc/manifest_7500000.mpd').pipe(response)
   }
 })
 
@@ -53,9 +53,7 @@ const availableBitrates = [
   '1500000',
   '3000000',
   '5800000',
-  '7500000',
-  '12000000',
-  '17000000'
+  '7500000'
 ]
 
 const resolutionWidth = [
@@ -68,9 +66,7 @@ const resolutionWidth = [
   '1024',
   '1280',
   '1920',
-  '2560',
-  '3840',
-  '3840'
+  '2560'
 ]
 
 const getMaxBitrateInMPD = (deviceType, screenWidth, topBitrate) => {
