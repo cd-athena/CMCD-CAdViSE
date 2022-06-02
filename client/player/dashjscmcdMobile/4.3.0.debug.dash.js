@@ -48035,11 +48035,11 @@ if (undefined === atob) {
                     }
 
                     function _getDeviceType(){
-                        return DEVICE_TYPES.TV;
+                        return DEVICE_TYPES.MOBILE;
                     }
 
                     function _getScreenWidth(){
-                        return SCREENWIDTH.TV;
+                        return SCREENWIDTH.MOBILE;
                     }
 
                     function _getObjectDurationByRequest(request) {
@@ -58754,6 +58754,8 @@ if (undefined === atob) {
                         var bitrates = mediaInfo.bitrateList.map(function (b) {
                             return b.bandwidth;
                         });
+                        console.log('minh');
+                        console.log(bitrates);
                         var utilities = utilitiesFromBitrates(bitrates);
                         utilities = utilities.map(function (u) {
                             return u - utilities[0] + 1;
@@ -59100,11 +59102,14 @@ if (undefined === atob) {
                                 //     if the real buffer bufferLevel runs out, the placeholder buffer cannot prevent rebuffering.
                                 //     However, the InsufficientBufferRule takes care of this scenario.
                                 updatePlaceholderBuffer(bolaState, mediaType);
+                                bolaState.bitrates = mediaInfo.bitrateList.map(function (b) {
+                                    return b.bandwidth;
+                                });
+                                console.log("----- .bitrates " + JSON.stringify(bolaState.bitrates));
                                 quality = getQualityFromBufferLevel(bolaState, bufferLevel + bolaState.placeholderBuffer); // we want to avoid oscillations
                                 // We implement the "BOLA-O" variant: when network bandwidth lies between two encoded bitrate levels, stick to the lowest level.
 
                                 var qualityForThroughput = abrController.getQualityForBitrate(mediaInfo, safeThroughput, streamId, latency);
-                                console.log('\t--- DEBUG - BOLA ABR  - bolaState.lastQuality = ' + bolaState.lastQuality + '\t # of qualities= ' + bolaState.utilities.length);
                                 if (quality > bolaState.lastQuality && quality > qualityForThroughput) {
                                     // only intervene if we are trying to *increase* quality to an *unsustainable* level
                                     // we are only avoid oscillations - do not drop below last quality

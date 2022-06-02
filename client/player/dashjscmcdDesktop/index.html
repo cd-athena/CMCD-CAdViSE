@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dash JS Player 4 - Dynamic</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://localhost/player/dashjscmcdDesktop/asset/4.3.0.debug.dash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div>
+    <video style="width: 1280px;height: 720px;" id="video"></video>
+</div>
+
+<div id='trace' style="height:640px;width:480px;border:1px solid #ccc;font:16px/26px Georgia, Garamond;overflow:auto;"></div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    const keyValues = window.location.search.substr(1).split('&')
+    let experimentId, title, alk
+
+    keyValues.forEach(keyValueString => {
+      let keyValueArray = keyValueString.split('=')
+      switch (keyValueArray[0]) {
+        case 'id':
+          experimentId = keyValueArray[1]
+          break
+        case 'title':
+          title = keyValueArray[1]
+          break
+        case 'alk':
+          alk = keyValueArray[1]
+          break
+      }
+    })
+    const mpdURL = 'http://localhost/dataset/' + title + '/manifest.mpd?playerABR=dashjscmcdDesktop-dynamic'
+    let logURL = 'http://localhost/log/' + title + '/%event%?playerABR=dashjscmcdDesktop-dynamic'
+
+    const video = document.getElementById('video')
+    const player = dashjs.MediaPlayer().create()
+
+    const CMCD_DATA_GENERATED = dashjs.MetricsReporting.events.CMCD_DATA_GENERATED;
+    const CMCD_MODE_HEADER = 'header'; /* as HTTP headers */
+
+
+    // const events = ["loadstart",  "suspend", "abort", "error", "emptied", "stalled", "loadedmetadata", "loadeddata", "canplay", "canplaythrough", "playing", "waiting", "seeking", "seeked", "ended", "durationchange", "play", "pause", "ratechange", "resize", "volumechange", "timeupdate", "progress"];
+    const events = ['loadstart', 'suspend', 'abort', 'error', 'emptied', 'stalled', 'loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough', 'playing', 'waiting', 'seeking', 'seeked', 'ended', 'durationchange', 'play', 'pause', 'ratechange']
+
+    events.forEach(event => {
+      video.addEventListener(event, e => {
+        axios.get(logURL.replace('%event%', e.type) + '&noCache=' + (new Date()).getTime()).catch(error => {
+          console.log(error)
+        })
+      })
+    })
+
+    player.initialize(video, mpdURL, false)
+    player.play()
+
+    player.on(CMCD_DATA_GENERATED, handleCmcdDataGeneratedEvent);
+
+    player.updateSettings({
+        streaming: {
+            cmcd: {
+                enabled: true, 
+                sid: 'b248658d-1d1a-4039-91d0-8c08ba597da5', 
+                cid: '21cf726cfe3d937b5f974f72bb5bd06a',
+                mode: CMCD_MODE_HEADER,
+            }
+        }
+    });
+
+    function handleCmcdDataGeneratedEvent(event) {
+        log('type: ' + event.mediaType);
+        log('file: ' + event.url.split('/').pop());
+        const mode = player.getSettings().streaming.cmcd.mode;
+        const data = mode === CMCD_MODE_HEADER ? getKeysForHeaderMode(event) : getKeysForQueryMode(event);
+        let keys = Object.keys(data);
+        keys = keys.sort();
+        // for (const key of keys) {
+        //     log(key.padEnd(4) + ': ' + event.cmcdData[key]);
+        // }
+        // log('');
+    }
+
+    function getKeysForQueryMode(event) {
+        const cmcdData = {};
+        const cmcdString = event.cmcdString;
+
+        extractKeyValuePairs(cmcdString, cmcdData);
+
+        return cmcdData;
+    }
+
+    function getKeysForHeaderMode(event) {
+        const cmcdData = {};
+        const keys = Object.keys(event.headers);
+
+        for (const key of keys) {
+            extractKeyValuePairs(event.headers[key], cmcdData)
+        }
+        
+        return cmcdData
+    }
+
+    function extractKeyValuePairs(cmcdString, cmcdData) {
+        if (cmcdString === '') {
+            return;
+        }
+        const keyValuePairs = cmcdString.split(',');
+
+        keyValuePairs.forEach(function (keyValuePair) {
+            const data = keyValuePair.split('=');
+            const key = data[0];
+
+            cmcdData[key] = data[1];
+        })
+
+    }
+
+    function log(msg) {
+        msg = msg.length > 200 ? msg.substring(0, 200) + '...' : msg; /* to avoid repeated wrapping with large objects */
+        const tracePanel = document.getElementById('trace');
+        tracePanel.innerHTML += msg + '\n' + '<br />';
+        tracePanel.scrollTop = tracePanel.scrollHeight;
+        console.log(msg);
+    }
+
+  })
+</script>
+</body>
+</html>
