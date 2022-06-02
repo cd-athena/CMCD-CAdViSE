@@ -35516,7 +35516,6 @@ if (undefined === atob) {
                             var realAdaptation = representationController.getData();
                             var maxQuality = abrController.getMaxAllowedIndexFor(type, streamInfo.id);
                             var minIdx = abrController.getMinAllowedIndexFor(type, streamInfo.id);
-                            console.log('\t--- DEBUG - maxQuality: ' + maxQuality);
                             var quality, averageThroughput;
                             var bitrate = null;
 
@@ -36913,7 +36912,6 @@ if (undefined === atob) {
                             idx = _checkMaxBitrate(type, streamId);
                             idx = _checkMaxRepresentationRatio(idx, type, streamId);
                             idx = _checkPortalSize(idx, type, streamId);
-                            console.log('\t--- DEBUG - maxQuality: ' + maxQuality);
                             return idx;
                         } catch (e) {
                             return undefined;
@@ -58752,8 +58750,6 @@ if (undefined === atob) {
                         var bitrates = mediaInfo.bitrateList.map(function (b) {
                             return b.bandwidth;
                         });
-                        console.log('minh');
-                        console.log(bitrates);
                         var utilities = utilitiesFromBitrates(bitrates);
                         utilities = utilities.map(function (u) {
                             return u - utilities[0] + 1;
@@ -58830,7 +58826,6 @@ if (undefined === atob) {
 
                     function getQualityFromBufferLevel(bolaState, bufferLevel) {
                         var bitrateCount = bolaState.bitrates.length;
-                        console.log('\t--- DEBUG - BOLA ABR getQualityFromBufferLevel - bitrateCount = ' + bitrateCount);
                         var quality = NaN;
                         var score = NaN;
 
@@ -58842,7 +58837,7 @@ if (undefined === atob) {
                                 quality = i;
                             }
                         }
-                        console.log('\t--- DEBUG - BOLA ABR getQualityFromBufferLevel - quality (NOT NAN) = ' + quality);
+
                         return quality;
                     } // maximum buffer level which prefers to download at quality rather than wait
 
@@ -59108,6 +59103,7 @@ if (undefined === atob) {
                                 // We implement the "BOLA-O" variant: when network bandwidth lies between two encoded bitrate levels, stick to the lowest level.
 
                                 var qualityForThroughput = abrController.getQualityForBitrate(mediaInfo, safeThroughput, streamId, latency);
+
                                 if (quality > bolaState.lastQuality && quality > qualityForThroughput) {
                                     // only intervene if we are trying to *increase* quality to an *unsustainable* level
                                     // we are only avoid oscillations - do not drop below last quality
@@ -59146,7 +59142,6 @@ if (undefined === atob) {
 
                             default:
                                 logger.debug('BOLA ABR rule invoked in bad state.'); // should not arrive here, try to recover
-                                console.log('\t--- DEBUG - BOLA ABR rule invoked in bad state.');
 
                                 switchRequest.quality = abrController.getQualityForBitrate(mediaInfo, safeThroughput, streamId, latency);
                                 switchRequest.reason.state = bolaState.state;
