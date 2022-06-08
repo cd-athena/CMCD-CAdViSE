@@ -234,6 +234,7 @@ config="${config/\"--shapes--\"/$networkConfig}"
 
 playerIndex=0
 for publicIp in "${clientPublicIps[@]}"; do
+  config="${config/--playerIndex--/$playerIndex}"
   if [[ $playerIndex == 0 ]]; then
     config="${config/--player--/${players[playerIndex]}}"
   else
