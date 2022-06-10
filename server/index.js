@@ -1,4 +1,5 @@
-import kmeans from './kMeansClustering.js';
+import kmeans from './kMeansClustering.js'
+
 const express = require('express')
 const fs = require('fs')
 const app = express()
@@ -17,7 +18,8 @@ app.get('/ping', (request, response) => {
 // http://localhost/dataset/stc/128000/seg-31.m4s?playerABR=dashjscmcdTV-dynamic-p0
 // http://localhost/dataset/stc/manifest.mpd?playerABR=dashjs4-dynamic-p0
 app.get('/:title/:fileName', (request, response) => {
-  const { title, fileName } = request.params
+  const { title, fileName, playerABR } = request.params
+  const clientID = playerABR.split('-').pop()
 
   const CMCDParams = {}
   if (request.headers['cmcd-object']) {
@@ -27,7 +29,6 @@ app.get('/:title/:fileName', (request, response) => {
   }
 
   if (CMCDParams.dt && CMCDParams.sw && CMCDParams.tb) {
-    const clientID = getClientID(request)
     console.log('Serving', title, 'manifest_' + getMaxBitrateInMPDMultipleClient(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb, clientID) + '.mpd')
     fs.createReadStream('manifests/stc/manifest_' + getMaxBitrateInMPDMultipleClient(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb, clientID) + '.mpd').pipe(response)
   } else {
@@ -76,7 +77,6 @@ const resolutionWidth = [
   '3840',
   '3840'
 ]
-
 
 const clientData = {
   'm': {},
@@ -139,63 +139,54 @@ const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, c
   let data = new Array()
 
   for (let key in clientData[deviceType]) {
-      let val = clientData[deviceType][key]
-      data.push(val)
+    let val = clientData[deviceType][key]
+    data.push(val)
   }
 
   if (data.length == 1) {
-    console.log("========== data length = 1 ----- END")
+    console.log('========== data length = 1 ----- END')
     return getMaxBitrateInMPDSignleClient(deviceType, screenWidth, topBitrate)
   }
 
   const k = getK(data)
   const clusters = kmeans(data, k)
-  let   location = -1
-  
-  for (let i = 0; i < clusters.centroids.length; i ++) {
-    console.log(" clusters idx " + i + ": " + JSON.stringify(clusters.clusters[i]))
-    
+  let location = -1
+
+  for (let i = 0; i < clusters.centroids.length; i++) {
+    console.log(' clusters idx ' + i + ': ' + JSON.stringify(clusters.clusters[i]))
+
     const pointsArray = clusters.clusters[i].points
-    for (let j = 0; j < pointsArray.length; j ++) {
-        if (pointsArray[j].includes(screenWidth) && pointsArray[j].includes(topBitrate)) {
-            location = i
-            console.log("==========> oreka. centroid idx = " + location)
-            break
-        }
-    }
-    
-    if (location != -1) {
+    for (let j = 0; j < pointsArray.length; j++) {
+      if (pointsArray[j].includes(screenWidth) && pointsArray[j].includes(topBitrate)) {
+        location = i
+        console.log('==========> oreka. centroid idx = ' + location)
         break
+      }
+    }
+
+    if (location != -1) {
+      break
     }
   }
 
-  for (let i = resolutionWidth.length - 1; i >= 0; i --) {
-      if (resolutionWidth[i] <= clusters.centroids[location][0] && 
-          availableBitrates[i] <= clusters.centroids[location][1]*1000) {
-            return availableBitrates[i]
-      }
+  for (let i = resolutionWidth.length - 1; i >= 0; i--) {
+    if (resolutionWidth[i] <= clusters.centroids[location][0] &&
+      availableBitrates[i] <= clusters.centroids[location][1] * 1000) {
+      return availableBitrates[i]
+    }
   }
-  
-  return availableBitrates[0]  
-}
 
-const getClientID = (request) => {
-    const queryString = request.split('?')[1]
-    const urlParams = new URLSearchParams(queryString)
-    const clientID = urlParams.get('playerABR').split('-').pop()
-
-    return clientID
+  return availableBitrates[0]
 }
 
 const getK = (data) => {
   const screen_array = []
 
   for (let i = 0; i < data.length; i++) {
-      if (screen_array.includes(data[i][0])) {
-      }
-      else {
-          screen_array.push(data[i][0])
-      }
+    if (screen_array.includes(data[i][0])) {
+    } else {
+      screen_array.push(data[i][0])
+    }
   }
 
   return screen_array.length
