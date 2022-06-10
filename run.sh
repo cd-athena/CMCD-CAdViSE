@@ -106,12 +106,12 @@ for argument in "$@"; do
           if [[ $value == *"--"* ]]; then
             break
           fi
-          playerQuantity="$( cut -d 'x' -f 1 <<< "$value" )";
-          playerName="$( cut -d 'x' -f 2- <<< "$value" )";
+          playerQuantity="$(cut -d 'x' -f 1 <<<"$value")"
+          playerName="$(cut -d 'x' -f 2- <<<"$value")"
           if [[ " ${players[@]} " =~ " ${playerName} " ]]; then
-            until [  $playerQuantity -lt 1 ]; do
-               newPlayers+=($playerName)
-               let playerQuantity-=1
+            until [ $playerQuantity -lt 1 ]; do
+              newPlayers+=($playerName)
+              let playerQuantity-=1
             done
           else
             showError "Invalid player '$value'"
@@ -236,8 +236,11 @@ playerIndex=0
 for publicIp in "${clientPublicIps[@]}"; do
   if [[ $playerIndex == 0 ]]; then
     config="${config/--player--/${players[playerIndex]}}"
+    config="${config/--playerIndex--/p$playerIndex}"
   else
-    config="${config/${players[playerIndex - 1]}/${players[playerIndex]}}"
+    previousIndex=$((playerIndex-1))
+    config="${config/${players[previousIndex]}/${players[playerIndex]}}"
+    config="${config/p$previousIndex/p$playerIndex}"
   fi
   echo "$config" >"$id/config.json"
 

@@ -2,6 +2,7 @@
   "id": "--id--",
   "title": "--title--",
   "player": "--player--",
+  "playerIndex": "--playerIndex--",
   "alk": "--alk--",
   "serverIp": "--serverIp--",
   "experimentDuration": "--experimentDuration--",

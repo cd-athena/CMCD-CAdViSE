@@ -18,7 +18,7 @@
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', () => {
     const keyValues = window.location.search.substr(1).split('&')
-    let experimentId, title, alk
+    let experimentId, title, alk, index
 
     keyValues.forEach(keyValueString => {
       let keyValueArray = keyValueString.split('=')
@@ -32,10 +32,13 @@
         case 'alk':
           alk = keyValueArray[1]
           break
+        case 'index':
+          index = keyValueArray[1]
+          break
       }
     })
-    const mpdURL = 'http://localhost/dataset/' + title + '/manifest.mpd?playerABR=dashjscmcdTV-dynamic'
-    let logURL = 'http://localhost/log/' + title + '/%event%?playerABR=dashjscmcdTV-dynamic'
+    const mpdURL = 'http://localhost/dataset/' + title + '/manifest.mpd?playerABR=dashjscmcdTV-dynamic-' + index
+    let logURL = 'http://localhost/log/' + title + '/%event%?playerABR=dashjscmcdTV-dynamic-' + index
 
     const video = document.getElementById('video')
     const player = dashjs.MediaPlayer().create()
