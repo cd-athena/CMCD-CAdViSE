@@ -15,8 +15,6 @@ app.get('/ping', (request, response) => {
   response.send('pong')
 })
 
-// http://localhost/dataset/stc/128000/seg-31.m4s?playerABR=dashjscmcdTV-dynamic-p0
-// http://localhost/dataset/stc/manifest.mpd?playerABR=dashjs4-dynamic-p0
 app.get('/:title/:fileName', (request, response) => {
   const { title, fileName, playerABR } = request.params
   const clientID = playerABR.split('-').pop()
@@ -79,9 +77,9 @@ const resolutionWidth = [
 ]
 
 const clientData = {
-  'm': {},
-  'd': {},
-  't': {}
+  'm': {}, // 'm' stands for mobile devices
+  'd': {}, // 'd' stands for desktop devices
+  't': {}  // 't' stands for TV devices
 }
 
 const getMaxBitrateInMPDSignleClient = (deviceType, screenWidth, topBitrate) => {
@@ -159,7 +157,6 @@ const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, c
     for (let j = 0; j < pointsArray.length; j++) {
       if (pointsArray[j].includes(screenWidth) && pointsArray[j].includes(topBitrate)) {
         location = i
-        console.log('==========> oreka. centroid idx = ' + location)
         break
       }
     }
