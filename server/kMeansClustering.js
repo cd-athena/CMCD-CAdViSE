@@ -206,3 +206,4 @@ function kmeans(dataset, k, useNaiveSharding = true) {
   }
 }
 
+module.exports = kmeans
