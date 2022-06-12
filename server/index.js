@@ -15,7 +15,9 @@ app.get('/ping', (request, response) => {
 })
 
 app.get('/:title/:fileName', (request, response) => {
-  const { title, fileName, playerABR } = request.params
+  const { title, fileName} = request.params
+  const {playerABR} = request.query
+
   const clientID = playerABR.split('-').pop()
 
   const CMCDParams = {}
