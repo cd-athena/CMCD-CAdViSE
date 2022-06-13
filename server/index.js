@@ -40,8 +40,7 @@ app.get('/:title/:fileName', (request, response) => {
 app.get('/:title/:filePath/:fileName', (request, response) => {
   const { title, filePath, fileName } = request.params
   console.log('Serving', title, filePath, fileName)
-  // fs.createReadStream('dataset/' + title + '/' + filePath + '/' + fileName).pipe(response)
-  fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
+  fs.createReadStream('dataset/' + title + '/' + filePath + '/' + fileName).pipe(response)
 })
 
 app.listen(80, () => {
