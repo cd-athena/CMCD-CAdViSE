@@ -5,7 +5,8 @@ const kmeans = require('./kMeansClustering')
 
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*')
-  response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+  response.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT")
+  response.header('Access-Control-Allow-Headers', '*')
   next()
 })
 
@@ -15,10 +16,37 @@ app.get('/ping', (request, response) => {
 })
 
 app.get('/:title/:fileName', (request, response) => {
+  console.log('====================================================')
   const { title, fileName} = request.params
   const {playerABR} = request.query
 
   const clientID = playerABR.split('-').pop()
+
+  const CMCDParams = {}
+  if (request.headers['cmcd-object']) {
+    request.headers['cmcd-object'].split(',').forEach(CMCDParam => {
+      CMCDParams[CMCDParam.split('=')[0]] = CMCDParam.split('=')[1]
+    })
+  }
+
+  if (CMCDParams.dt && CMCDParams.sw && CMCDParams.tb) {
+    const finalFile = getMaxBitrateInMPDMultipleClient(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb, clientID)
+    console.log('Serving', title, 'manifest_' + finalFile + '.mpd')
+    fs.createReadStream('manifests/stc/manifest_' + finalFile + '.mpd').pipe(response)
+  } else {
+    console.log('Serving', title, fileName)
+    // fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
+    fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
+  }
+})
+
+app.get('/:title/:filePath/:fileName', (request, response) => {
+  console.log('**********************************************************')
+  const { title, fileName} = request.params
+  const {playerABR} = request.query
+
+  const clientID = playerABR.split('-').pop()
+  console.log('client ID: ' + clientID)
 
   const CMCDParams = {}
   if (request.headers['cmcd-object']) {
@@ -37,10 +65,9 @@ app.get('/:title/:fileName', (request, response) => {
   }
 })
 
-app.get('/:title/:filePath/:fileName', (request, response) => {
-  const { title, filePath, fileName } = request.params
-  console.log('Serving', title, filePath, fileName)
-  fs.createReadStream('dataset/' + title + '/' + filePath + '/' + fileName).pipe(response)
+app.get('/:title/:filePath/:subFilePath/:fileName', (request, response) => {
+  const { title, filePath, subFilePath, fileName } = request.params
+  fs.createReadStream('dataset/' + title + '/' + filePath + '/' + subFilePath + '/' + fileName).pipe(response)
 })
 
 app.listen(80, () => {
@@ -77,11 +104,7 @@ const resolutionWidth = [
   '3840'
 ]
 
-const clientData = {
-  'm': {}, // 'm' stands for mobile devices
-  'd': {}, // 'd' stands for desktop devices
-  't': {}  // 't' stands for TV devices
-}
+const clientData = {}
 
 const getMaxBitrateInMPDSignleClient = (deviceType, screenWidth, topBitrate) => {
   let maxWidthForDevice = 0
@@ -133,7 +156,19 @@ const getMaxBitrateInMPDSignleClient = (deviceType, screenWidth, topBitrate) => 
 //     }
 // }
 const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, clientID) => {
-  clientData[deviceType][clientID] = [screenWidth, topBitrate]
+  console.log('---- deviceType: ' + deviceType)
+  console.log('---- clientD: ' + clientID);
+  console.log('---- clientData[' + deviceType + ']: ' + JSON.stringify(clientData[deviceType]))
+  if (typeof clientData[deviceType] === 'undefined') {
+    clientData[deviceType] = {
+      [clientID] : [screenWidth, topBitrate]
+    }
+    console.log('---- First clientData: ' + JSON.stringify(clientData))
+  }
+  else 
+    clientData[deviceType][clientID] = [screenWidth, topBitrate]
+
+    console.log('---- CURRENT clientData: ' + JSON.stringify(clientData))
 
   let data = new Array()
 
@@ -170,6 +205,7 @@ const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, c
   for (let i = resolutionWidth.length - 1; i >= 0; i--) {
     if (resolutionWidth[i] <= clusters.centroids[location][0] &&
       availableBitrates[i] <= clusters.centroids[location][1] * 1000) {
+      console.log('====> return: ' + availableBitrates[i])
       return availableBitrates[i]
     }
   }
