@@ -47568,7 +47568,7 @@ if (undefined === atob) {
                     TV: 't'
                 };
                 const SCREENWIDTH = {
-                    MOBILE: 1024,
+                    MOBILE: 1280,
                     DESKTOP: 1920,
                     TV: 3840
                 }
