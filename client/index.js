@@ -13,7 +13,7 @@ app.get('/:anything', (request, response) => {
 })
 
 app.get('/player/:playerName/asset/:assetName', async (request, response) => {
-  const {playerName, assetName} = request.params
+  const { playerName, assetName } = request.params
   fs.createReadStream('player/' + playerName + '/' + assetName).pipe(response)
 })
 
@@ -35,7 +35,7 @@ app.get('/dataset/:title/:fileName', async (request, response) => {
 
   axios({
     method: 'get',
-    url: BASEURL + title + '/' + fileName,
+    url: BASEURL + title + '/' + fileName + '?playerABR=' + playerABR,
     headers: request.headers
   }).then((serverResponse) => {
     const manifest = serverResponse.data.replace(/queryString/g, 'playerABR=' + playerABR)
@@ -56,7 +56,7 @@ app.get('/dataset/:title/:filePath/:fileName', async (request, response) => {
 
   axios({
     method: 'get',
-    url: BASEURL + title + '/' + filePath + '/' + fileName,
+    url: BASEURL + title + '/' + filePath + '/' + fileName + '?playerABR=' + playerABR,
     responseType: 'stream',
     headers: request.headers
   }).then((serverResponse) => {
