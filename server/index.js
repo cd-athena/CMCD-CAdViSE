@@ -1,6 +1,7 @@
 const express = require('express')
 const fs = require('fs')
 const app = express()
+const kmeans = require('./kMeansClustering')
 
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*')
