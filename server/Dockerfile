@@ -3,6 +3,7 @@ MAINTAINER babak@itec.aau.at
 
 WORKDIR /home/ppt
 COPY index.js /home/ppt
+COPY kMeansClustering.js /home/ppt
 COPY package.json /home/ppt
 COPY package-lock.json /home/ppt
 RUN mkdir -p /home/ppt/dataset
