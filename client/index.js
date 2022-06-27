@@ -28,7 +28,7 @@ app.get('/dataset/:title/:fileName', async (request, response) => {
   const BASEURL = 'http://' + serverIp + '/'
 
   try {
-    await log(playerABR, 'requesting', title, fileName)
+    await log(playerABR, 'requesting', title, fileName, '')
   } catch (error) {
     return response.send('Failed to record the log: ' + JSON.stringify(error))
   }
@@ -37,8 +37,9 @@ app.get('/dataset/:title/:fileName', async (request, response) => {
     method: 'get',
     url: BASEURL + title + '/' + fileName + '?playerABR=' + playerABR,
     headers: request.headers
-  }).then((serverResponse) => {
+  }).then(async (serverResponse) => {
     const manifest = serverResponse.data.replace(/queryString/g, 'playerABR=' + playerABR)
+    await log(playerABR, 'received', title, fileName, manifest)
     response.send(manifest)
   }).catch(console.error)
 })
@@ -49,7 +50,7 @@ app.get('/dataset/:title/:filePath/:fileName', async (request, response) => {
   const BASEURL = 'http://' + serverIp + '/'
 
   try {
-    await log(playerABR, 'requesting', title, filePath + '/' + fileName)
+    await log(playerABR, 'requesting', title, filePath + '/' + fileName, '')
   } catch (error) {
     return response.send('Failed to record the log: ' + JSON.stringify(error))
   }
@@ -69,7 +70,7 @@ app.get('/log/:title/:eventName', async (request, response) => {
   const { playerABR } = request.query
 
   try {
-    await log(playerABR, 'event', title, eventName)
+    await log(playerABR, 'event', title, eventName, '')
   } catch (error) {
     return response.send('Failed to record the log: ' + JSON.stringify(error))
   }
@@ -81,17 +82,23 @@ app.listen(80, () => {
   console.log('Listening on port 80')
 })
 
-const log = async (playerABR, action, title, name) => {
+const log = async (playerABR, action, title, name, content) => {
+  const item = {
+    id: uuidv4(),
+    experimentId: id,
+    time: (new Date()).toISOString(),
+    playerABR,
+    action,
+    title,
+    name
+  }
+
+  if (content && content !== '') {
+    item.content = content
+  }
+
   return dynamoDb.put({
     TableName: 'ppt-logs',
-    Item: {
-      id: uuidv4(),
-      experimentId: id,
-      time: (new Date()).toISOString(),
-      playerABR,
-      action,
-      title,
-      name
-    }
+    Item: item
   }).promise()
 }
