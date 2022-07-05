@@ -12,48 +12,43 @@ app.get('/:anything', (request, response) => {
   response.send('')
 })
 
-app.get('/player/:playerName/asset/:assetName', async (request, response) => {
+app.get('/player/:playerName/asset/:assetName', (request, response) => {
   const { playerName, assetName } = request.params
+  if (assetName.includes('.map')) {
+    return response.send('')
+  }
   fs.createReadStream('player/' + playerName + '/' + assetName).pipe(response)
 })
 
-app.get('/player/:playerName', async (request, response) => {
+app.get('/player/:playerName', (request, response) => {
   const { playerName } = request.params
   fs.createReadStream('player/' + playerName + '/index.html').pipe(response)
 })
 
-app.get('/dataset/:title/:fileName', async (request, response) => {
+app.get('/dataset/:title/:fileName', (request, response) => {
   const { title, fileName } = request.params
   const { playerABR } = request.query
   const BASEURL = 'http://' + serverIp + '/'
 
-  try {
-    await log(playerABR, 'requesting', title, fileName, '')
-  } catch (error) {
-    return response.send('Failed to record the log: ' + JSON.stringify(error))
-  }
+  log(playerABR, 'requesting', title, fileName, '')
 
   axios({
     method: 'get',
     url: BASEURL + title + '/' + fileName + '?playerABR=' + playerABR,
     headers: request.headers
-  }).then(async (serverResponse) => {
+  }).then((serverResponse) => {
     const manifest = serverResponse.data.replace(/queryString/g, 'playerABR=' + playerABR)
-    await log(playerABR, 'received', title, fileName, manifest)
+    log(playerABR, 'received', title, fileName, manifest)
     response.send(manifest)
   }).catch(console.error)
 })
 
-app.get('/dataset/:title/:filePath/:fileName', async (request, response) => {
+app.get('/dataset/:title/:filePath/:fileName', (request, response) => {
   const { title, filePath, fileName } = request.params
   const { playerABR } = request.query
   const BASEURL = 'http://' + serverIp + '/'
 
-  try {
-    await log(playerABR, 'requesting', title, filePath + '/' + fileName, '')
-  } catch (error) {
-    return response.send('Failed to record the log: ' + JSON.stringify(error))
-  }
+  log(playerABR, 'requesting', title, filePath + '/' + fileName, '')
 
   axios({
     method: 'get',
@@ -65,15 +60,11 @@ app.get('/dataset/:title/:filePath/:fileName', async (request, response) => {
   }).catch(console.error)
 })
 
-app.get('/log/:title/:eventName', async (request, response) => {
+app.get('/log/:title/:eventName', (request, response) => {
   const { title, eventName } = request.params
   const { playerABR } = request.query
 
-  try {
-    await log(playerABR, 'event', title, eventName, '')
-  } catch (error) {
-    return response.send('Failed to record the log: ' + JSON.stringify(error))
-  }
+  log(playerABR, 'event', title, eventName, '')
 
   response.send('ok')
 })
@@ -82,7 +73,7 @@ app.listen(80, () => {
   console.log('Listening on port 80')
 })
 
-const log = async (playerABR, action, title, name, content) => {
+const log = (playerABR, action, title, name, content) => {
   const item = {
     id: uuidv4(),
     experimentId: id,
@@ -97,8 +88,19 @@ const log = async (playerABR, action, title, name, content) => {
     item.content = content
   }
 
-  return dynamoDb.put({
+  logItem(item)
+}
+
+const logItem = item => {
+  dynamoDb.put({
     TableName: 'ppt-logs',
     Item: item
-  }).promise()
+  }, function (error, data) {
+    if (error) {
+      console.log(error)
+      setTimeout(() => {
+        logItem(item)
+      }, 500)
+    }
+  })
 }
