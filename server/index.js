@@ -3,17 +3,6 @@ const fs = require('fs')
 const app = express()
 const kmeans = require('./kMeansClustering')
 
-var cmcdLogPath = './cmcd.log';
-function writeToLog(msg) {
-    var dateTime = new Date().toLocaleString();
-    var logLine = ('\n[' + dateTime + '] ' + msg);
-    try {
-        fs.appendFileSync(cmcdLogPath, logLine);
-    } catch (e) {
-        // do not log
-    }
-}
-
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*')
   response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
@@ -21,7 +10,7 @@ app.use((request, response, next) => {
 })
 
 app.get('/ping', (request, response) => {
-  writeToLog('Pinged!')
+  console.log('Pinged!')
   response.send('pong')
 })
 
@@ -38,10 +27,10 @@ app.get('/:title/:fileName', (request, response) => {
 
   if (CMCDParams.dt && CMCDParams.sw && CMCDParams.tb) {
     const finalMaxBitrate = getMaxBitrateInMPDMultipleClient(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb, clientID)
-    writeToLog('Serving', title, 'manifest_' + finalMaxBitrate + '.mpd')
+    console.log('Serving', title, 'manifest_' + finalMaxBitrate + '.mpd')
     fs.createReadStream('manifests/stc/manifest_' + finalMaxBitrate + '.mpd').pipe(response)
   } else {
-    writeToLog('Serving', title, fileName)
+    console.log('Serving', title, fileName)
     // fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
     fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
   }
@@ -49,12 +38,12 @@ app.get('/:title/:fileName', (request, response) => {
 
 app.get('/:title/:filePath/:fileName', (request, response) => {
   const { title, filePath, fileName } = request.params
-  writeToLog('Serving', title, filePath, fileName)
+  console.log('Serving', title, filePath, fileName)
   fs.createReadStream('dataset/' + title + '/' + filePath + '/' + fileName).pipe(response)
 })
 
 app.listen(80, () => {
-  writeToLog('Listening on port 80')
+  console.log('Listening on port 80')
 })
 
 const availableBitrates = [
@@ -139,20 +128,20 @@ const getMaxBitrateInMPDSignleClient = (deviceType, screenWidth, topBitrate) => 
 //     }
 // }
 const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, clientID) => {
-  writeToLog('---- deviceType: ' + deviceType)
-  writeToLog('---- clientD: ' + clientID);
-  writeToLog('---- clientData[' + deviceType + ']: ' + JSON.stringify(clientData[deviceType]))
+  console.log('---- deviceType: ' + deviceType)
+  console.log('---- clientD: ' + clientID);
+  console.log('---- clientData[' + deviceType + ']: ' + JSON.stringify(clientData[deviceType]))
   if (typeof clientData[deviceType] === 'undefined') {
     clientData[deviceType] = {
       [clientID] : [screenWidth, topBitrate]
     }
-    writeToLog('---- First clientData: ' + JSON.stringify(clientData))
+    console.log('---- First clientData: ' + JSON.stringify(clientData))
   }
   else {
     clientData[deviceType][clientID] = [screenWidth, topBitrate]
   }
 
-  writeToLog('---- CURRENT clientData: ' + JSON.stringify(clientData))
+  console.log('---- CURRENT clientData: ' + JSON.stringify(clientData))
 
   let data = new Array()
 
@@ -162,7 +151,7 @@ const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, c
   }
 
   if (data.length == 1) {
-    writeToLog('========== data length = 1 ----- END')
+    console.log('========== data length = 1 ----- END')
     return getMaxBitrateInMPDSignleClient(deviceType, screenWidth, topBitrate)
   }
 
@@ -171,7 +160,7 @@ const getMaxBitrateInMPDMultipleClient = (deviceType, screenWidth, topBitrate, c
   let location = -1
 
   for (let i = 0; i < clusters.centroids.length; i++) {
-    writeToLog(' clusters idx ' + i + ': ' + JSON.stringify(clusters.clusters[i]))
+    console.log(' clusters idx ' + i + ': ' + JSON.stringify(clusters.clusters[i]))
 
     const pointsArray = clusters.clusters[i].points
     for (let j = 0; j < pointsArray.length; j++) {
