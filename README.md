@@ -1,4 +1,4 @@
-### CMCD-enabled Adaptive Streaming Players Performance Testbed
+## CMCD-enabled Adaptive Streaming Players Performance Testbed
 - Evaluates CADLAD - a CMCD-Aware per-Device bitrate
 ladder construction
 - Execute experiments on AWS cloud 
@@ -36,3 +36,20 @@ ladder construction
 Copy the assigned IP address from the terminal, add `:5900` to the end of it
 and try to connect with a VNC client.
 Note that vnc service will be available only after initialization stage.
+
+
+## Authors
+* Minh Nguyen - Christian Doppler Laboratory ATHENA, Alpen-Adria-Universitaet Klagenfurt - minh.nguyen@aau.at
+* Babak Taraghi - Christian Doppler Laboratory ATHENA, Alpen-Adria-Universitaet Klagenfurt - babak.taraghi@aau.at
+
+## Citation
+```
+@inproceedings{nguyencadlad22,
+  title={CADLAD: Device-aware Bitrate Ladder Construction for HTTP Adaptive Streaming},
+  author={Nguyen, Minh and Taraghi, Babak Rahman and Bentaleb, Abdelhak and Zimmermann, Roger and Timmerer, Christian},
+  booktitle={2022 18th international conference on network and service management (CNSM)},
+  pages={00--01},
+  year={2022},
+  organization={IEEE}
+}
+```
