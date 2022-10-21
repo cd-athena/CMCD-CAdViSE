@@ -40,7 +40,7 @@ Note that vnc service will be available only after initialization stage.
 
 ## Authors
 * Minh Nguyen - Christian Doppler Laboratory ATHENA, Alpen-Adria-Universitaet Klagenfurt - minh.nguyen@aau.at
-* Babak Taraghi - Christian Doppler Laboratory ATHENA, Alpen-Adria-Universitaet Klagenfurt - minh.nguyen@aau.at
+* Babak Taraghi - Christian Doppler Laboratory ATHENA, Alpen-Adria-Universitaet Klagenfurt - babak.taraghi@aau.at
 
 ## Citation
 ```
