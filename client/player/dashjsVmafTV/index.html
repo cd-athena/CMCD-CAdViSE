@@ -16,12 +16,11 @@
 <div id='trace' style="height:640px;width:480px;border:1px solid #ccc;font:16px/26px Georgia, Garamond;overflow:auto;"></div>
 
 <script type="text/javascript">
-    // source https://streaminglearningcenter.com/encoding/best-practices-for-netflixs-vmaf-metric.html
-    // source https://eyevinntechnology.medium.com/keep-an-eye-on-the-video-quality-b9bcb58dd5a1
-    const minAcceptableVMAF = 20;
-    const maxAcceptableVMAF = 93;
+  // source https://streaminglearningcenter.com/encoding/best-practices-for-netflixs-vmaf-metric.html
+  // source https://eyevinntechnology.medium.com/keep-an-eye-on-the-video-quality-b9bcb58dd5a1
+  const minAcceptableVMAF = 20;
+  const maxAcceptableVMAF = 93;
     
-    const context = this.context
   document.addEventListener('DOMContentLoaded', () => {
     const keyValues = window.location.search.substr(1).split('&')
     let experimentId, title, alk, index
@@ -67,7 +66,7 @@
         }
         return true;
     }
-    player.registerCustomCapabilitiesFilter(filterCapabilities) ;
+    player.registerCustomCapabilitiesFilter(filterCapabilities);
 
     player.initialize(video, mpdURL, false)
     player.play()
