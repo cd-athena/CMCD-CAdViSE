@@ -3,6 +3,9 @@ const fs = require('fs')
 const app = express()
 const kmeans = require('./kMeansClustering')
 
+var idx = 0
+var MaxManifestID = 16
+
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*')
   response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
@@ -29,15 +32,21 @@ app.get('/:title/:fileName', (request, response) => {
     const finalMaxBitrate = getMaxBitrateInMPDMultipleClient(CMCDParams.dt, CMCDParams.sw, CMCDParams.tb, clientID)
     console.log('Serving', title, 'manifest_' + finalMaxBitrate + '.mpd')
     fs.createReadStream('manifests/stc/manifest_' + finalMaxBitrate + '.mpd').pipe(response)
+  } else if (CMCDParams.dt){
+    var dt = getDeviceType(CMCDParams.dt)
+    responseFile = 'manifests/' + title + '/' + 'manifest_' + dt + '_' + Math.min(idx, MaxManifestID) + '.mpd'
+    console.log('Serving', title, responseFile)
+    fs.createReadStream(responseFile).pipe(response)
   } else {
     console.log('Serving', title, fileName)
     // fs.createReadStream('dataset/' + title + '/' + fileName).pipe(response)
-    fs.createReadStream('manifests/stc/manifest_17000000.mpd').pipe(response)
+    fs.createReadStream('manifests/' + title + '/' + fileName).pipe(response)
   }
 })
 
 app.get('/:title/:filePath/:fileName', (request, response) => {
   const { title, filePath, fileName } = request.params
+  idx = getCorrespondingMPDIndex(fileName)
   console.log('Serving', title, filePath, fileName)
   fs.createReadStream('dataset/' + title + '/' + filePath + '/' + fileName).pipe(response)
 })
@@ -196,4 +205,27 @@ const getK = (data) => {
   }
 
   return screen_array.length
+}
+
+const getDeviceType = (cmcdDt) => {
+  switch(cmcdDt.replace(/['"]+/g, '')) {
+    case 't':
+      return 'tv'
+    case 'd':
+      return 'desktop'
+    case 'm':
+      return 'phone'
+    default:
+      return ''
+  }
+}
+
+const getCorrespondingMPDIndex = (fileName) => {
+  var tmp = fileName.split(/[-.]/)
+
+  if (tmp.length == 3) {
+    return Math.round(parseInt(tmp[1])/5)
+  } else {
+    return 0
+  }
 }
