@@ -214,7 +214,7 @@ const getDeviceType = (cmcdDt) => {
     case 'd':
       return 'desktop'
     case 'm':
-      return 'mobile'
+      return 'phone'
     default:
       return ''
   }
